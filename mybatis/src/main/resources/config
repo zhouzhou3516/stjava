@@ -1,0 +1,21 @@
+{
+   "sqlMap":
+   {
+    "com.com.zhou.jdbc.abstractdemo.dynamicproxy.PersonDao.getPerson":
+    {
+        "sql":"select id,name,create_time as createTime from person where id =1",
+        "resultClazz":"com.com.zhou.jdbc.abstractdemo.helperplus.Person",
+        "parameterClazz":"com.com.zhou.jdbc.abstractdemo.helperplus.PersonRequest"
+    },
+    "com.com.zhou.jdbc.abstractdemo.dynamicproxy.PersonDao.getPersons":
+    {
+        "sql":"select id,name,create_time as createTime from person",
+        "resultClazz":"com.com.zhou.jdbc.abstractdemo.helperplus.Person",
+        "parameterClazz":"com.com.zhou.jdbc.abstractdemo.helperplus.PersonRequest"
+    }
+   },
+    "handlerTypeMap":
+    {
+     "java.util.Date":"com.benmu.jdbc.abstractdemo.helperplus.typehandler.DateTypeHandler"
+    }
+}
